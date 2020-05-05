@@ -1,0 +1,22 @@
+name: "Monitor de Quarentena Usando Dados de Trânsito do Google"
+output_dir: "."
+navbar:
+  title: "Monitor de Quarentena Usando Dados de Trânsito do Google"
+  
+  left:
+    - text: "Metodologia"
+      href: methodology.html
+    - text: "Repositório GitHub"
+      href: GitHubRepo.html
+  
+  right:
+    - icon: fa-envelope fa-lg
+      href: contact.html
+    - icon: fa-github fa-lg
+      href: http://github.com/zabore
+    
+
+output:
+  html_document:
+  theme: paper
+  css: 'styles.css'
