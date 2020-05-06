@@ -3,6 +3,10 @@
 
 <link rel="stylesheet" href="styles.css" type="text/css">
 
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
 <img src="images/MyPhoto.jpg" style="width:25%; border:10px solid; margin-right: 20px" align="left">
 
 
@@ -11,7 +15,8 @@
 <p>&nbsp;</p>
 
 #### Murilo de Olivera Junqueira
-#### Professor de Ciência Política (UFPA-Belém), cientista de dados.
+#### Ciêntista Político e Cientista de Dados.
+#### Professor de Ciência Política (UFPA-Belém) 
 
 <p>&nbsp;</p>
 

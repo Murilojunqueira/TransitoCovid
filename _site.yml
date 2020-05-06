@@ -6,13 +6,11 @@ navbar:
   left:
     - text: "Indicador por cidade"
       href: Bycity.html
-    - text: "Sobre o Autor"
-      href: PersonaInfo.html
+
   
   right:
-    - icon: fa-github fa-lg
-      href: https://github.com/Murilojunqueira/TransitoCovid
-    
+    - text: "Sobre o Autor"
+      href: PersonaInfo.html    
 
 output:
   html_document:
