@@ -3,10 +3,87 @@
 
 <link rel="stylesheet" href="styles.css" type="text/css">
 
-I like to analyze data to answer research questions and test hypotheses. Currently I investigate questions related to breast cancer through my work as a Research Biostatistician at [Memorial Sloan Kettering Cancer Center](https://www.mskcc.org/departments/epidemiology-biostatistics) in the department of Epidemiology & Biostatistics. 
+# Monitor de Quarentena Usando Dados de Trânsito do Google
 
-I graduated from the [University of Minnesota](http://www.sph.umn.edu/academics/divisions/biostatistics/) with a MS in biostatistics in 2010. In 2012 I began working toward my DrPH in biostatistics as a part-time student at [Columbia University](https://www.mailman.columbia.edu/become-student/departments/biostatistics), where I am investigating statistical methods for the study of etiologic heterogeneity in epidemiologic studies under the advisement of [Dr. Shuang Wang](https://www.mailman.columbia.edu/people/our-faculty/sw2206) at Columbia University and [Dr. Colin Begg](https://www.mskcc.org/profile/colin-begg) at Memorial Sloan Kettering Cancer Center. I expect to graduate by the end of 2018.
+<p>&nbsp;</p>
 
-I am a well-known R enthusiast, including serving on the board and being an active member of [R Ladies NYC](http://www.rladiesnyc.org/). 
+Esse site mostra um indicador de quarentena usando os dados do [API do Google Maps](https://developers.google.com/maps/documentation/directions/intro). O raciocício básico da medida é que se as cidades estão em quarentena, as ruas estarão desertas e não haverá trânsito nenhum na cidade.
 
-My full CV is available [here](files/Zabor_CV_2017_Q4.pdf).
+<p>&nbsp;</p>
+
+*Metodologia.* A medida do indicador é muito simples. O tempo para cruzar a cidade de madrugada de um extremo a outro, passando pelo centro, é usado como o indicador de referência mínimo. O indicador é simplismente a razão tempo necessário para atravesar a cidade durante o dia/tempo para atravessar a cidade de madrugada. Quanto maior esse tempo, mais trânsito a cidade tem e menor é sua quarentena. Cada cidade é avaliada em dois trajetos: o trajeto norte/sul (ir do extremo norte ao extremo sul) e o leste/oeste; sempre passando pelo centro da cidade. 
+
+<p>&nbsp;</p>
+
+*Amostra.* A amostra cobre [as 50 cidades mais populosas do Brasil](https://pt.wikipedia.org/wiki/Lista_de_munic%C3%ADpios_do_Brasil_acima_de_cem_mil_habitantes). As informações são colhidas 10 vezes por dia todos os dias. Porém, para deixar o indicador mais limpo, iremos mostrar abaixo sobre os dias de trabalho (excluindo feriados e fim da semana) e somente os horários das 8hs, 9hs, 12hs, 17hs, 18hs, e 19hs. A coleta de dados começou em 06 de abril de 2020.
+
+Abaixo está o indicador atualizado de cada um das cidades individualizado.
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+## Indicador geral de quarentena. 
+
+<p>&nbsp;</p>
+
+Abaixo está o indicador do fluxo de trânsito das 50 cidades da amostra.
+
+<p>&nbsp;</p>
+
+![Indicador de trânsito geral por dia](images/ByDay.png)
+
+<p>&nbsp;</p>
+
+*Comentário:* quanto mais próximo de 1 (o valor mínimo teórico, o tempo de atravessar a cidade de madrugada), *maior* é a adesão á quarentena. Quanto maior o valor do indicador, menor é a adesão à quarentena. Podemos observar que as maiores cidades brasileiras começaram lentamente a quarentena a partir do dia 06. Depois de um pequeno repique depois do dia 17/04, houve uma forte guinada em direção ao uma quarentena mais dura. O aumento pontual do dia 30 de abril ainda não configura uma tendência. Aparentenmente, os as vésperas de feriado (como dia 17 e dia 30) levam a um repique do indicador.
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+## As cidades que MAIS respeitam a quarentena são:
+
+
+<p>&nbsp;</p>
+
+![Cidades com menor trânsito](images/MenorTransito.png)
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+## As cidades que MENOS respeitam a quarentena são:
+
+<p>&nbsp;</p>
+
+![Cidades com maior trânsito](images/MaiorTransito.png)
+
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+## comparação entre cidades da mesma região
+
+<p>&nbsp;</p>
+
+Abaixo temos a comparação entre as principais capitais do Sudeste, Nordeste, Sul e Norte, respectivamente.
+
+
+
+<p>&nbsp;</p>
+
+![Indicador de trânsito, região sudeste](images/Grupo1.png)
+
+
+<p>&nbsp;</p>
+
+![Indicador de trânsito, região nordeste](images/Grupo3.png)
+
+
+
+<p>&nbsp;</p>
+
+![Indicador de trânsito, região sul](images/Grupo2.png)
+
+
+<p>&nbsp;</p>
+
+![Indicador de trânsito, região norte](images/Grupo4.png)

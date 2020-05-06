@@ -11,7 +11,7 @@
 
 
 
-<title>index.utf8</title>
+<title>Bycity.utf8</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -307,118 +307,466 @@ $(document).ready(function () {
 
 
 <p><link rel="stylesheet" href="styles.css" type="text/css"></p>
-<div id="monitor-de-quarentena-usando-dados-de-trânsito-do-google" class="section level1">
-<h1>Monitor de Quarentena Usando Dados de Trânsito do Google</h1>
+<div id="indicador-de-trânsito-por-cidade" class="section level2">
+<h2>Indicador de trânsito por cidade</h2>
 <p>
  
 </p>
-<p>Esse site mostra um indicador de quarentena usando os dados do <a href="https://developers.google.com/maps/documentation/directions/intro">API do Google Maps</a>. O raciocício básico da medida é que se as cidades estão em quarentena, as ruas estarão desertas e não haverá trânsito nenhum na cidade.</p>
-<p>
- 
-</p>
-<p><em>Metodologia.</em> A medida do indicador é muito simples. O tempo para cruzar a cidade de madrugada de um extremo a outro, passando pelo centro, é usado como o indicador de referência mínimo. O indicador é simplismente a razão tempo necessário para atravesar a cidade durante o dia/tempo para atravessar a cidade de madrugada. Quanto maior esse tempo, mais trânsito a cidade tem e menor é sua quarentena. Cada cidade é avaliada em dois trajetos: o trajeto norte/sul (ir do extremo norte ao extremo sul) e o leste/oeste; sempre passando pelo centro da cidade.</p>
-<p>
- 
-</p>
-<p><em>Amostra.</em> A amostra cobre <a href="https://pt.wikipedia.org/wiki/Lista_de_munic%C3%ADpios_do_Brasil_acima_de_cem_mil_habitantes">as 50 cidades mais populosas do Brasil</a>. As informações são colhidas 10 vezes por dia todos os dias. Porém, para deixar o indicador mais limpo, iremos mostrar abaixo sobre os dias de trabalho (excluindo feriados e fim da semana) e somente os horários das 8hs, 9hs, 12hs, 17hs, 18hs, e 19hs. A coleta de dados começou em 06 de abril de 2020.</p>
-<p>Abaixo está o indicador atualizado de cada um das cidades individualizado.</p>
+<p>Abaixo você pode ver como está a quarentena na sua cidade:</p>
+<p><em>As cidades estão por ordem de população.</em></p>
 <p>
  
 </p>
 <p>
  
 </p>
-<div id="indicador-geral-de-quarentena." class="section level2">
-<h2>Indicador geral de quarentena.</h2>
+<center>
+<h3>
+SÃO PAULO :
+</h3>
+</center>
+<p><img src="images/Transito%20001%20-%20SÃO%20PAULO.png" /></p>
 <p>
  
 </p>
-<p>Abaixo está o indicador do fluxo de trânsito das 50 cidades da amostra.</p>
+<center>
+<h3>
+RIO DE JANEIRO :
+</h3>
+</center>
+<p><img src="images/Transito%20002%20-%20RIO%20DE%20JANEIRO.png" /></p>
 <p>
  
 </p>
-<div class="figure">
-<img src="images/ByDay.png" alt="Indicador de trânsito geral por dia" />
-<p class="caption">Indicador de trânsito geral por dia</p>
-</div>
+<center>
+<h3>
+BRASÍLIA :
+</h3>
+</center>
+<p><img src="images/Transito%20003%20-%20BRASÍLIA.png" /></p>
 <p>
  
 </p>
-<p><em>Comentário:</em> quanto mais próximo de 1 (o valor mínimo teórico, o tempo de atravessar a cidade de madrugada), <em>maior</em> é a adesão á quarentena. Quanto maior o valor do indicador, menor é a adesão à quarentena. Podemos observar que as maiores cidades brasileiras começaram lentamente a quarentena a partir do dia 06. Depois de um pequeno repique depois do dia 17/04, houve uma forte guinada em direção ao uma quarentena mais dura. O aumento pontual do dia 30 de abril ainda não configura uma tendência. Aparentenmente, os as vésperas de feriado (como dia 17 e dia 30) levam a um repique do indicador.</p>
+<center>
+<h3>
+SALVADOR :
+</h3>
+</center>
+<p><img src="images/Transito%20004%20-%20SALVADOR.png" /></p>
 <p>
  
 </p>
+<center>
+<h3>
+FORTALEZA :
+</h3>
+</center>
+<p><img src="images/Transito%20005%20-%20FORTALEZA.png" /></p>
 <p>
  
 </p>
-</div>
-<div id="as-cidades-que-mais-respeitam-a-quarentena-são" class="section level2">
-<h2>As cidades que MAIS respeitam a quarentena são:</h2>
+<center>
+<h3>
+BELO HORIZONTE :
+</h3>
+</center>
+<p><img src="images/Transito%20006%20-%20BELO%20HORIZONTE.png" /></p>
 <p>
  
 </p>
-<div class="figure">
-<img src="images/MenorTransito.png" alt="Cidades com menor trânsito" />
-<p class="caption">Cidades com menor trânsito</p>
-</div>
+<center>
+<h3>
+MANAUS :
+</h3>
+</center>
+<p><img src="images/Transito%20007%20-%20MANAUS.png" /></p>
 <p>
  
 </p>
+<center>
+<h3>
+CURITIBA :
+</h3>
+</center>
+<p><img src="images/Transito%20008%20-%20CURITIBA.png" /></p>
 <p>
  
 </p>
-</div>
-<div id="as-cidades-que-menos-respeitam-a-quarentena-são" class="section level2">
-<h2>As cidades que MENOS respeitam a quarentena são:</h2>
+<center>
+<h3>
+RECIFE :
+</h3>
+</center>
+<p><img src="images/Transito%20009%20-%20RECIFE.png" /></p>
 <p>
  
 </p>
-<div class="figure">
-<img src="images/MaiorTransito.png" alt="Cidades com maior trânsito" />
-<p class="caption">Cidades com maior trânsito</p>
-</div>
+<center>
+<h3>
+GOIÂNIA :
+</h3>
+</center>
+<p><img src="images/Transito%20010%20-%20GOIÂNIA.png" /></p>
 <p>
  
 </p>
+<center>
+<h3>
+BELÉM :
+</h3>
+</center>
+<p><img src="images/Transito%20011%20-%20BELÉM.png" /></p>
 <p>
  
 </p>
-</div>
-<div id="comparação-entre-cidades-da-mesma-região" class="section level2">
-<h2>comparação entre cidades da mesma região</h2>
+<center>
+<h3>
+PORTO ALEGRE :
+</h3>
+</center>
+<p><img src="images/Transito%20012%20-%20PORTO%20ALEGRE.png" /></p>
 <p>
  
 </p>
-<p>Abaixo temos a comparação entre as principais capitais do Sudeste, Nordeste, Sul e Norte, respectivamente.</p>
+<center>
+<h3>
+GUARULHOS :
+</h3>
+</center>
+<p><img src="images/Transito%20013%20-%20GUARULHOS.png" /></p>
 <p>
  
 </p>
-<div class="figure">
-<img src="images/Grupo1.png" alt="Indicador de trânsito, região sudeste" />
-<p class="caption">Indicador de trânsito, região sudeste</p>
-</div>
+<center>
+<h3>
+CAMPINAS :
+</h3>
+</center>
+<p><img src="images/Transito%20014%20-%20CAMPINAS.png" /></p>
 <p>
  
 </p>
-<div class="figure">
-<img src="images/Grupo3.png" alt="Indicador de trânsito, região nordeste" />
-<p class="caption">Indicador de trânsito, região nordeste</p>
-</div>
+<center>
+<h3>
+SÃO LUÍS :
+</h3>
+</center>
+<p><img src="images/Transito%20015%20-%20SÃO%20LUÍS.png" /></p>
 <p>
  
 </p>
-<div class="figure">
-<img src="images/Grupo2.png" alt="Indicador de trânsito, região sul" />
-<p class="caption">Indicador de trânsito, região sul</p>
-</div>
+<center>
+<h3>
+SÃO GONÇALO :
+</h3>
+</center>
+<p><img src="images/Transito%20016%20-%20SÃO%20GONÇALO.png" /></p>
 <p>
  
 </p>
-<div class="figure">
-<img src="images/Grupo4.png" alt="Indicador de trânsito, região norte" />
-<p class="caption">Indicador de trânsito, região norte</p>
-</div>
-</div>
+<center>
+<h3>
+MACEIÓ :
+</h3>
+</center>
+<p><img src="images/Transito%20017%20-%20MACEIÓ.png" /></p>
+<p>
+ 
+</p>
+<center>
+<h3>
+DUQUE DE CAXIAS :
+</h3>
+</center>
+<p><img src="images/Transito%20018%20-%20DUQUE%20DE%20CAXIAS.png" /></p>
+<p>
+ 
+</p>
+<center>
+<h3>
+CAMPO GRANDE :
+</h3>
+</center>
+<p><img src="images/Transito%20019%20-%20CAMPO%20GRANDE.png" /></p>
+<p>
+ 
+</p>
+<center>
+<h3>
+NATAL :
+</h3>
+</center>
+<p><img src="images/Transito%20020%20-%20NATAL.png" /></p>
+<p>
+ 
+</p>
+<center>
+<h3>
+TERESINA :
+</h3>
+</center>
+<p><img src="images/Transito%20021%20-%20TERESINA.png" /></p>
+<p>
+ 
+</p>
+<center>
+<h3>
+SÃO BERNARDO DO CAMPO :
+</h3>
+</center>
+<p><img src="images/Transito%20022%20-%20SÃO%20BERNARDO%20DO%20CAMPO.png" /></p>
+<p>
+ 
+</p>
+<center>
+<h3>
+NOVA IGUAÇU :
+</h3>
+</center>
+<p><img src="images/Transito%20023%20-%20NOVA%20IGUAÇU.png" /></p>
+<p>
+ 
+</p>
+<center>
+<h3>
+JOÃO PESSOA :
+</h3>
+</center>
+<p><img src="images/Transito%20024%20-%20JOÃO%20PESSOA.png" /></p>
+<p>
+ 
+</p>
+<center>
+<h3>
+SANTO ANDRÉ :
+</h3>
+</center>
+<p><img src="images/Transito%20025%20-%20SANTO%20ANDRÉ.png" /></p>
+<p>
+ 
+</p>
+<center>
+<h3>
+SÃO JOSÉ DOS CAMPOS :
+</h3>
+</center>
+<p><img src="images/Transito%20026%20-%20SÃO%20JOSÉ%20DOS%20CAMPOS.png" /></p>
+<p>
+ 
+</p>
+<center>
+<h3>
+JABOATÃO DOS GUARARAPES :
+</h3>
+</center>
+<p><img src="images/Transito%20027%20-%20JABOATÃO%20DOS%20GUARARAPES.png" /></p>
+<p>
+ 
+</p>
+<center>
+<h3>
+OSASCO :
+</h3>
+</center>
+<p><img src="images/Transito%20028%20-%20OSASCO.png" /></p>
+<p>
+ 
+</p>
+<center>
+<h3>
+RIBEIRÃO PRETO :
+</h3>
+</center>
+<p><img src="images/Transito%20029%20-%20RIBEIRÃO%20PRETO.png" /></p>
+<p>
+ 
+</p>
+<center>
+<h3>
+UBERLÂNDIA :
+</h3>
+</center>
+<p><img src="images/Transito%20030%20-%20UBERLÂNDIA.png" /></p>
+<p>
+ 
+</p>
+<center>
+<h3>
+SOROCABA :
+</h3>
+</center>
+<p><img src="images/Transito%20031%20-%20SOROCABA.png" /></p>
+<p>
+ 
+</p>
+<center>
+<h3>
+CONTAGEM :
+</h3>
+</center>
+<p><img src="images/Transito%20032%20-%20CONTAGEM.png" /></p>
+<p>
+ 
+</p>
+<center>
+<h3>
+ARACAJU :
+</h3>
+</center>
+<p><img src="images/Transito%20033%20-%20ARACAJU.png" /></p>
+<p>
+ 
+</p>
+<center>
+<h3>
+FEIRA DE SANTANA :
+</h3>
+</center>
+<p><img src="images/Transito%20034%20-%20FEIRA%20DE%20SANTANA.png" /></p>
+<p>
+ 
+</p>
+<center>
+<h3>
+CUIABÁ :
+</h3>
+</center>
+<p><img src="images/Transito%20035%20-%20CUIABÁ.png" /></p>
+<p>
+ 
+</p>
+<center>
+<h3>
+JOINVILLE :
+</h3>
+</center>
+<p><img src="images/Transito%20036%20-%20JOINVILLE.png" /></p>
+<p>
+ 
+</p>
+<center>
+<h3>
+APARECIDA DE GOIÂNIA :
+</h3>
+</center>
+<p><img src="images/Transito%20037%20-%20APARECIDA%20DE%20GOIÂNIA.png" /></p>
+<p>
+ 
+</p>
+<center>
+<h3>
+JUIZ DE FORA :
+</h3>
+</center>
+<p><img src="images/Transito%20038%20-%20JUIZ%20DE%20FORA.png" /></p>
+<p>
+ 
+</p>
+<center>
+<h3>
+LONDRINA :
+</h3>
+</center>
+<p><img src="images/Transito%20039%20-%20LONDRINA.png" /></p>
+<p>
+ 
+</p>
+<center>
+<h3>
+ANANINDEUA :
+</h3>
+</center>
+<p><img src="images/Transito%20040%20-%20ANANINDEUA.png" /></p>
+<p>
+ 
+</p>
+<center>
+<h3>
+PORTO VELHO :
+</h3>
+</center>
+<p><img src="images/Transito%20041%20-%20PORTO%20VELHO.png" /></p>
+<p>
+ 
+</p>
+<center>
+<h3>
+NITERÓI :
+</h3>
+</center>
+<p><img src="images/Transito%20042%20-%20NITERÓI.png" /></p>
+<p>
+ 
+</p>
+<center>
+<h3>
+BELFORD ROXO :
+</h3>
+</center>
+<p><img src="images/Transito%20043%20-%20BELFORD%20ROXO.png" /></p>
+<p>
+ 
+</p>
+<center>
+<h3>
+SERRA :
+</h3>
+</center>
+<p><img src="images/Transito%20044%20-%20SERRA.png" /></p>
+<p>
+ 
+</p>
+<center>
+<h3>
+CAXIAS DO SUL :
+</h3>
+</center>
+<p><img src="images/Transito%20045%20-%20CAXIAS%20DO%20SUL.png" /></p>
+<p>
+ 
+</p>
+<center>
+<h3>
+CAMPOS DOS GOYTACAZES :
+</h3>
+</center>
+<p><img src="images/Transito%20046%20-%20CAMPOS%20DOS%20GOYTACAZES.png" /></p>
+<p>
+ 
+</p>
+<center>
+<h3>
+MACAPÁ :
+</h3>
+</center>
+<p><img src="images/Transito%20047%20-%20MACAPÁ.png" /></p>
+<p>
+ 
+</p>
+<center>
+<h3>
+FLORIANÓPOLIS :
+</h3>
+</center>
+<p><img src="images/Transito%20048%20-%20FLORIANÓPOLIS.png" /></p>
+<p>
+ 
+</p>
+<center>
+<h3>
+VILA VELHA :
+</h3>
+</center>
+<p><img src="images/Transito%20049%20-%20VILA%20VELHA.png" /></p>
+<p>
+ 
+</p>
+<center>
+<h3>
+SÃO JOÃO DE MERITI :
+</h3>
+</center>
+<p><img src="images/Transito%20050%20-%20SÃO%20JOÃO%20DE%20MERITI.png" /></p>
 </div>
 
 

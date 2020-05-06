@@ -1,11 +1,11 @@
-name: "Monitor de Quarentena Usando Dados de Trânsito do Google"
+name: "Monitor de Quarentena"
 output_dir: "."
 navbar:
-  title: "Monitor de Quarentena Usando Dados de Trânsito do Google"
+  title: "Monitor de Quarentena"
   
   left:
-    - text: "Metodologia"
-      href: methodology.html
+    - text: "Indicador por cidade"
+      href: Bycity.html
     - text: "Repositório GitHub"
       href: GitHubRepo.html
   
