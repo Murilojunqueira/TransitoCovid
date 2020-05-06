@@ -1,5 +1,5 @@
 ---
-pagetitle: Monitor de Quarentena - Sobre o Autor
+pagetitle: Monitor de Quarentena - Informações por Cidade
 ---
 
 <link rel="stylesheet" href="styles.css" type="text/css">
