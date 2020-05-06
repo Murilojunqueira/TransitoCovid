@@ -11,7 +11,7 @@
 
 
 
-<title>index.utf8</title>
+<title>PersonaInfo.utf8</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -277,12 +277,18 @@ $(document).ready(function () {
   <a href="Bycity.html">Indicador por cidade</a>
 </li>
 <li>
-  <a href="PersonaInfo.html">Sobre o Autor</a>
+  <a href="GitHubRepo.html">Repositório GitHub</a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-  <a href="https://github.com/Murilojunqueira/TransitoCovid">
+  <a href="contact.html">
+    <span class="fa fa-envelope fa-lg"></span>
+     
+  </a>
+</li>
+<li>
+  <a href="http://github.com/zabore">
     <span class="fa fa-github fa-lg"></span>
      
   </a>
@@ -301,120 +307,23 @@ $(document).ready(function () {
 
 
 <p><link rel="stylesheet" href="styles.css" type="text/css"></p>
-<div id="monitor-de-quarentena-usando-dados-de-trânsito-do-google" class="section level1">
-<h1>Monitor de Quarentena Usando Dados de Trânsito do Google</h1>
+<p><img src="images/MyPhoto.jpg" style="width:25%; border:10px solid; margin-right: 20px" align="left"></p>
+<div id="sobre-o-autor" class="section level3">
+<h3>Sobre o Autor:</h3>
 <p>
  
 </p>
-<p>Esse site mostra um indicador de quarentena usando os dados do <a href="https://developers.google.com/maps/documentation/directions/intro">API do Google Maps</a>. O raciocício básico da medida é que se as cidades estão em quarentena, as ruas estarão desertas e não haverá trânsito nenhum na cidade.</p>
-<p>
- 
-</p>
-<p><em>Metodologia.</em> A medida do indicador é muito simples. O tempo para cruzar a cidade de madrugada de um extremo a outro, passando pelo centro, é usado como o indicador de referência mínimo. O indicador é simplismente a razão tempo necessário para atravesar a cidade durante o dia/tempo para atravessar a cidade de madrugada. Quanto maior esse tempo, mais trânsito a cidade tem e menor é sua quarentena. Cada cidade é avaliada em dois trajetos: o trajeto norte/sul (ir do extremo norte ao extremo sul) e o leste/oeste; sempre passando pelo centro da cidade.</p>
-<p>
- 
-</p>
-<p><em>Amostra.</em> A amostra cobre <a href="https://pt.wikipedia.org/wiki/Lista_de_munic%C3%ADpios_do_Brasil_acima_de_cem_mil_habitantes">as 50 cidades mais populosas do Brasil</a>. As informações são colhidas 10 vezes por dia todos os dias. Porém, para deixar o indicador mais limpo, iremos mostrar abaixo sobre os dias de trabalho (excluindo feriados e fim da semana) e somente os horários das 8hs, 9hs, 12hs, 17hs, 18hs, e 19hs. A coleta de dados começou em 06 de abril de 2020.</p>
-<p>
- 
-</p>
-<p>Você também pode ver o indicador individualizado para cada uma das cidades <a href="Bycity.Rmd">AQUI</a>.</p>
-<p>
- 
-</p>
-<p>
- 
-</p>
-<div id="indicador-geral-de-quarentena." class="section level2">
-<h2>Indicador geral de quarentena.</h2>
-<p>
- 
-</p>
-<p>Abaixo está o indicador do fluxo de trânsito das 50 cidades da amostra.</p>
-<p>
- 
-</p>
-<div class="figure">
-<img src="images/ByDay.png" alt="Indicador de trânsito geral por dia" />
-<p class="caption">Indicador de trânsito geral por dia</p>
+<div id="murilo-de-olivera-junqueira" class="section level4">
+<h4>Murilo de Olivera Junqueira</h4>
 </div>
-<p>
- 
-</p>
-<p><em>Comentário:</em> quanto mais próximo de 1 (o valor mínimo teórico, o tempo de atravessar a cidade de madrugada), <em>maior</em> é a adesão á quarentena. Quanto maior o valor do indicador, menor é a adesão à quarentena. Podemos observar que as maiores cidades brasileiras começaram lentamente a quarentena a partir do dia 06. Depois de um pequeno repique depois do dia 17/04, houve uma forte guinada em direção ao uma quarentena mais dura. O aumento pontual do dia 30 de abril ainda não configura uma tendência. Aparentenmente, os as vésperas de feriado (como dia 17 e dia 30) levam a um repique do indicador.</p>
-<p>
- 
-</p>
+<div id="professor-de-ciência-política-ufpa-belém-cientista-de-dados." class="section level4">
+<h4>Professor de Ciência Política (UFPA-Belém), cientista de dados.</h4>
 <p>
  
 </p>
 </div>
-<div id="comparação-entre-cidades-da-mesma-região" class="section level2">
-<h2>comparação entre cidades da mesma região</h2>
-<p>
- 
-</p>
-<p>Abaixo temos a comparação entre as principais capitais do Sudeste, Nordeste, Sul e Norte, respectivamente.</p>
-<p>
- 
-</p>
-<div class="figure">
-<img src="images/Grupo1.png" alt="Indicador de trânsito, região sudeste" />
-<p class="caption">Indicador de trânsito, região sudeste</p>
-</div>
-<p>
- 
-</p>
-<div class="figure">
-<img src="images/Grupo3.png" alt="Indicador de trânsito, região nordeste" />
-<p class="caption">Indicador de trânsito, região nordeste</p>
-</div>
-<p>
- 
-</p>
-<div class="figure">
-<img src="images/Grupo2.png" alt="Indicador de trânsito, região sul" />
-<p class="caption">Indicador de trânsito, região sul</p>
-</div>
-<p>
- 
-</p>
-<div class="figure">
-<img src="images/Grupo4.png" alt="Indicador de trânsito, região norte" />
-<p class="caption">Indicador de trânsito, região norte</p>
-</div>
-</div>
-<div id="as-cidades-que-mais-respeitam-a-quarentena-são" class="section level2">
-<h2>As cidades que MAIS respeitam a quarentena são:</h2>
-<p>
- 
-</p>
-<div class="figure">
-<img src="images/MenorTransito.png" alt="Cidades com menor trânsito" />
-<p class="caption">Cidades com menor trânsito</p>
-</div>
-<p>
- 
-</p>
-<p>
- 
-</p>
-</div>
-<div id="as-cidades-que-menos-respeitam-a-quarentena-são" class="section level2">
-<h2>As cidades que MENOS respeitam a quarentena são:</h2>
-<p>
- 
-</p>
-<div class="figure">
-<img src="images/MaiorTransito.png" alt="Cidades com maior trânsito" />
-<p class="caption">Cidades com maior trânsito</p>
-</div>
-<p>
- 
-</p>
-<p>
- 
-</p>
+<div id="email-m.junqueirayahoo.com.br" class="section level4">
+<h4>Email: <a href="mailto:m.junqueira@yahoo.com.br" class="email">m.junqueira@yahoo.com.br</a></h4>
 </div>
 </div>
 

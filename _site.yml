@@ -6,14 +6,12 @@ navbar:
   left:
     - text: "Indicador por cidade"
       href: Bycity.html
-    - text: "Repositório GitHub"
-      href: GitHubRepo.html
+    - text: "Sobre o Autor"
+      href: PersonaInfo.html
   
   right:
-    - icon: fa-envelope fa-lg
-      href: contact.html
     - icon: fa-github fa-lg
-      href: http://github.com/zabore
+      href: https://github.com/Murilojunqueira/TransitoCovid
     
 
 output:

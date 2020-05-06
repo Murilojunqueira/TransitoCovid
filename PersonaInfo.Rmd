@@ -1,0 +1,20 @@
+---
+---
+
+<link rel="stylesheet" href="styles.css" type="text/css">
+
+<img src="images/MyPhoto.jpg" style="width:25%; border:10px solid; margin-right: 20px" align="left">
+
+
+### Sobre o Autor:
+
+<p>&nbsp;</p>
+
+#### Murilo de Olivera Junqueira
+#### Professor de Ciência Política (UFPA-Belém), cientista de dados.
+
+<p>&nbsp;</p>
+
+#### Email: m.junqueira@yahoo.com.br
+
+
