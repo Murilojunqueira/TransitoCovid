@@ -19,7 +19,7 @@ Esse site mostra um indicador de quarentena usando os dados do [API do Google Ma
 
 <p>&nbsp;</p>
 
-Você também pode ver o indicador individualizado para cada uma das cidades [AQUI](Bycity.md).
+Você também pode ver o indicador individualizado para cada uma das cidades [AQUI](Bycity.html).
 
 
 
