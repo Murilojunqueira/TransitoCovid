@@ -298,19 +298,19 @@ $(document).ready(function () {
 <p>
  
 </p>
-<p><em>Em busca de contribuir com o monitoramento da efetividade das medidas de distanciamento social para combater a Covid-19.</em></p>
+<p><strong>Contribuindo com o monitoramento da efetividade das medidas de distanciamento social para combater a Covid-19.</strong></p>
 <p>
  
 </p>
-<p>Esse site mostra um indicador de quarentena usando os dados do <a href="https://developers.google.com/maps/documentation/directions/intro">API do Google Maps</a>. O raciocício básico da medida é que se as cidades estão em quarentena, as ruas estarão desertas e não haverá trânsito nenhum na cidade.</p>
+<p>Esse site mostra um indicador de efetividade da quarentena para o combate ao Covid-19 usando os dados do <a href="https://developers.google.com/maps/documentation/directions/intro">API do Google Maps</a>. O raciocício por trás da medida é o seguinte: se a quarentena está funcionando, as cidades estarão vazias e não haverá trânsito. Ao contrário, se há trânsito, a quarentena não está sendo efetiva.</p>
 <p>
  
 </p>
-<p><em>Metodologia.</em> A medida do indicador é muito simples. O tempo para cruzar a cidade de madrugada de um extremo a outro, passando pelo centro, é usado como o indicador de referência mínimo. O indicador é simplismente a razão tempo necessário para atravesar a cidade durante o dia/tempo para atravessar a cidade de madrugada. Quanto maior esse tempo, mais trânsito a cidade tem e menor é sua quarentena. Cada cidade é avaliada em dois trajetos: o trajeto norte/sul (ir do extremo norte ao extremo sul) e o leste/oeste; sempre passando pelo centro da cidade.</p>
+<p><strong>Metodologia.</strong> A medida do indicador é simples: o tempo gasto para cruzar a cidade de uma ponta a outra, passado pelo centro, sobre o tempo gasto para o mesmo trajeto de madrugada, quando não há trânsito. Se o tempo gasto para atravessar a cidade é o mesmo de dia e de madrugada, o indicador será 1. Se o tempo para fazer o trajeto durante o dia for 10% maior que o tempo para se fazer o trajeto de madrugada, o indicador será 1,1; e assim por diante. Cada cidade é avaliada em dois trajetos: o trajeto norte/sul (ir do extremo norte ao extremo sul) e o leste/oeste; sempre passando pelo centro.</p>
 <p>
  
 </p>
-<p><em>Amostra.</em> A amostra cobre <a href="https://pt.wikipedia.org/wiki/Lista_de_munic%C3%ADpios_do_Brasil_acima_de_cem_mil_habitantes">as 50 cidades mais populosas do Brasil</a>. As informações são colhidas 10 vezes por dia todos os dias. Porém, para deixar o indicador mais limpo, iremos mostrar abaixo sobre os dias de trabalho (excluindo feriados e fim da semana) e somente os horários das 8hs, 9hs, 12hs, 17hs, 18hs, e 19hs. A coleta de dados começou em 06 de abril de 2020.</p>
+<p><strong>Amostra.</strong> A amostra cobre <a href="https://pt.wikipedia.org/wiki/Lista_de_munic%C3%ADpios_do_Brasil_acima_de_cem_mil_habitantes">as 50 cidades mais populosas do Brasil</a>. As informações são colhidas 10 vezes por dia todos os dias. Porém, para deixar os gráficos mais limpos, iremos mostrar apenas os dias de trabalho (excluindo feriados e fim da semana) e somente os horários das 8hs, 9hs, 12hs, 17hs, 18hs, e 19hs. A coleta de dados começou em 06 de abril de 2020.</p>
 <p>
  
 </p>
@@ -337,7 +337,7 @@ $(document).ready(function () {
 <p>
  
 </p>
-<p><em>Comentário:</em> quanto mais próximo de 1 (o valor mínimo teórico, o tempo de atravessar a cidade de madrugada), <em>maior</em> é a adesão á quarentena. Quanto maior o valor do indicador, menor é a adesão à quarentena. Podemos observar que as maiores cidades brasileiras começaram lentamente a quarentena a partir do dia 06. Depois de um pequeno repique depois do dia 17/04, houve uma forte guinada em direção ao uma quarentena mais dura. O aumento pontual do dia 30 de abril ainda não configura uma tendência. Aparentenmente, os as vésperas de feriado (como dia 17 e dia 30) levam a um repique do indicador.</p>
+<p><strong>Comentário:</strong> quanto mais próximo de 1 (o valor mínimo teórico, o tempo de atravessar a cidade de madrugada), <em>maior</em> é a adesão á quarentena. Quanto maior o valor do indicador, <em>menor</em> é a adesão à quarentena. Podemos observar que as maiores cidades brasileiras começaram lentamente a quarentena a partir do dia 06 de abril. Depois de um pequeno repique depois do dia 17/04, houve uma forte guinada em direção ao uma quarentena mais dura. O aumento pontual do dia 30 de abril ainda não configura ainda uma tendência. Aparentemente, os as vésperas de feriado (como dia 17 e dia 30) levam a um repique do indicador.</p>
 <p>
  
 </p>
@@ -346,7 +346,7 @@ $(document).ready(function () {
 </p>
 </div>
 <div id="comparação-entre-cidades-da-mesma-região" class="section level2">
-<h2>comparação entre cidades da mesma região</h2>
+<h2>Comparação entre cidades da mesma região</h2>
 <p>
  
 </p>
@@ -379,6 +379,12 @@ $(document).ready(function () {
 <img src="images/Grupo4.png" alt="Indicador de trânsito, região norte" />
 <p class="caption">Indicador de trânsito, região norte</p>
 </div>
+<p>
+ 
+</p>
+<p>
+ 
+</p>
 </div>
 <div id="as-cidades-que-mais-respeitam-a-quarentena-são" class="section level2">
 <h2>As cidades que MAIS respeitam a quarentena são:</h2>
