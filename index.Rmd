@@ -1,9 +1,14 @@
 ---
+pagetitle: Monitor de Quarentena
 ---
 
 <link rel="stylesheet" href="styles.css" type="text/css">
 
 # Monitor de Quarentena Usando Dados de Trânsito do Google
+
+<p>&nbsp;</p>
+
+*Em busca de contribuir com o monitoramento da efetividade das medidas de distanciamento social para combater a Covid-19.*
 
 <p>&nbsp;</p>
 
