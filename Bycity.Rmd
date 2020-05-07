@@ -8,6 +8,14 @@ pagetitle: Monitor de Quarentena - Informações por Cidade
 
 <p>&nbsp;</p>
 
+```{r, , echo=FALSE, results='asis'}
+  LastUpdate <- readLines("images/LastUpdate.txt")
+  cat('<center> <h4> Ultima Atualização - ', LastUpdate, '</h4> </center> \n')
+```
+
+
+<p>&nbsp;</p>
+
 Abaixo você pode ver como está a quarentena na sua cidade:
 
 *As cidades estão por ordem de população.*

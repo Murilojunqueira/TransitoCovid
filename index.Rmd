@@ -8,6 +8,14 @@ pagetitle: Monitor de Quarentena
 
 <p>&nbsp;</p>
 
+```{r, , echo=FALSE, results='asis'}
+  LastUpdate <- readLines("images/LastUpdate.txt")
+  cat('<center> <h4> Ultima Atualização - ', LastUpdate, '</h4> </center> \n')
+```
+
+<p>&nbsp;</p>
+
+
 **Contribuindo com o monitoramento da efetividade das medidas de distanciamento social para combater a Covid-19.**
 
 <p>&nbsp;</p>
@@ -34,7 +42,7 @@ Você também pode ver o indicador individualizado para cada uma das cidades [AQ
 
 <p>&nbsp;</p>
 
-Abaixo está o indicador do fluxo de trânsito das 50 cidades da amostra.
+Abaixo está o indicador do fluxo de trânsito médio das 50 cidades da amostra.
 
 <p>&nbsp;</p>
 
