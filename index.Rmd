@@ -20,7 +20,7 @@ pagetitle: Monitor de Quarentena
 
 <p>&nbsp;</p>
 
-Esse site mostra um indicador de efetividade da quarentena para o combate ao Covid-19 usando os dados do [API do Google Maps](https://developers.google.com/maps/documentation/directions/intro). O raciocício por trás da medida é o seguinte: se a quarentena está funcionando, as cidades estarão vazias e não haverá trânsito. Ao contrário, se há trânsito, a quarentena não está sendo efetiva.
+Esse site mostra um indicador de efetividade da quarentena para o combate ao Covid-19 usando os dados do [API do Google Maps](https://developers.google.com/maps/documentation/directions/intro). O raciocínio por trás da medida é o seguinte: se a quarentena está funcionando, as cidades estarão vazias e não haverá trânsito. Ao contrário, se há trânsito, a quarentena não está sendo efetiva.
 
 <p>&nbsp;</p>
 
