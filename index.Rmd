@@ -9,7 +9,7 @@ pagetitle: Monitor de Quarentena
 <p>&nbsp;</p>
 
 ```{r, , echo=FALSE, results='asis'}
-  LastUpdate <- readLines("images/LastUpdate.txt")
+  LastUpdate <- readLines("doc/figures/website/LastUpdate.txt")
   cat('<center> <h4> Ultima Atualização - ', LastUpdate, '</h4> </center> \n')
 ```
 
@@ -46,7 +46,7 @@ Abaixo está o indicador do fluxo de trânsito médio das 50 cidades da amostra.
 
 <p>&nbsp;</p>
 
-![Indicador de trânsito geral por dia](images/ByDay.png)
+![Indicador de trânsito geral por dia](doc/figures/website/ByDay.png)
 
 <p>&nbsp;</p>
 
@@ -65,23 +65,23 @@ Abaixo temos a comparação entre as principais capitais do Sudeste, Nordeste, S
 
 <p>&nbsp;</p>
 
-![Indicador de trânsito, região sudeste](images/Grupo1.png)
+![Indicador de trânsito, região sudeste](doc/figures/website/Grupo1.png)
 
 
 <p>&nbsp;</p>
 
-![Indicador de trânsito, região nordeste](images/Grupo3.png)
+![Indicador de trânsito, região nordeste](doc/figures/website/Grupo3.png)
 
 
 
 <p>&nbsp;</p>
 
-![Indicador de trânsito, região sul](images/Grupo2.png)
+![Indicador de trânsito, região sul](doc/figures/website/Grupo2.png)
 
 
 <p>&nbsp;</p>
 
-![Indicador de trânsito, região norte](images/Grupo4.png)
+![Indicador de trânsito, região norte](doc/figures/website/Grupo4.png)
 
 <p>&nbsp;</p>
 <p>&nbsp;</p>
@@ -90,7 +90,7 @@ Abaixo temos a comparação entre as principais capitais do Sudeste, Nordeste, S
 
 <p>&nbsp;</p>
 
-![Cidades com menor trânsito](images/MenorTransito.png)
+![Cidades com menor trânsito](doc/figures/website/MenorTransito.png)
 
 <p>&nbsp;</p>
 <p>&nbsp;</p>
@@ -99,7 +99,7 @@ Abaixo temos a comparação entre as principais capitais do Sudeste, Nordeste, S
 
 <p>&nbsp;</p>
 
-![Cidades com maior trânsito](images/MaiorTransito.png)
+![Cidades com maior trânsito](doc/figures/website/MaiorTransito.png)
 
 <p>&nbsp;</p>
 <p>&nbsp;</p>

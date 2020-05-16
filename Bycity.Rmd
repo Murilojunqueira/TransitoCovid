@@ -9,7 +9,7 @@ pagetitle: Monitor de Quarentena - Informações por Cidade
 <p>&nbsp;</p>
 
 ```{r, , echo=FALSE, results='asis'}
-  LastUpdate <- readLines("images/LastUpdate.txt")
+  LastUpdate <- readLines("doc/figures/website/LastUpdate.txt")
   cat('<center> <h4> Ultima Atualização - ', LastUpdate, '</h4> </center> \n')
 ```
 
@@ -32,7 +32,7 @@ for (i in seq_along(ListaCidades)){
   cat('\n')  
   cat('<p>&nbsp;</p>') 
   cat('<center> <h3>', ListaCidades[i], ': </h3> </center> \n') 
-  cat("![ ](images/", ListaImagens[i], ")", sep = "")
+  cat("![ ](doc/figures/website/", ListaImagens[i], ")", sep = "")
   cat('\n') 
 }
 ```

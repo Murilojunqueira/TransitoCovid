@@ -1,3 +1,0 @@
-
-
-setwd(rstudioapi::getActiveProject())
