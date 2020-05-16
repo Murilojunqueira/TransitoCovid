@@ -10,7 +10,7 @@ library(jsonlite)
 # Debug:
 # from = "-23.5921009,-46.8056180"
 # to = "-23.4859244,-46.3800909"
-# apiKey = "AIzaSyDYLR4pOKwLnppV9FQsvOdz0ErIxsqHrMc"
+# apiKey = ""
 # parameters = c("units", "departure_time", "alternatives")
 # units = "metric"
 # departure = "now"

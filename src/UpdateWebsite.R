@@ -19,8 +19,7 @@ render_site("index.Rmd")
 render_site("Bycity.Rmd")
 render_site("PersonaInfo.Rmd")
 
-  # Atualiza o GitHub
-
+# Atualiza o GitHub
 # install.packages("git2r")
 
 library(git2r)
