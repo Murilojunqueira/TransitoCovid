@@ -8,7 +8,7 @@ pagetitle: Monitor de Quarentena - Sobre o Autor
 <p>&nbsp;</p>
 
 
-<img src="images/MyPhoto.jpg" style="width:25%; border:10px solid; margin-right: 20px" align="left">
+<img src="doc/figures/photos/MyPhoto.jpg" style="width:25%; border:10px solid; margin-right: 20px" align="left">
 
 
 ### Sobre o Autor:
