@@ -2,6 +2,7 @@
 pagetitle: Monitor de Quarentena
 ---
 
+
 <link rel="stylesheet" href="styles.css" type="text/css">
 
 # Monitor de Quarentena Usando Dados de Trânsito do Google
@@ -37,6 +38,7 @@ Você também pode ver o indicador individualizado para cada uma das cidades [AQ
 
 <p>&nbsp;</p>
 <p>&nbsp;</p>
+
 
 ## Indicador geral de quarentena. 
 

@@ -12,5 +12,4 @@
 
 # Options
 options(stringsAsFactors = FALSE)
-options(encoding = "utf-8")
 

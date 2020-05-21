@@ -6,7 +6,6 @@
 
 library(rmarkdown)
 
-
 # Consolida informações do banco
 source("src/UpdateDataset.R")
 

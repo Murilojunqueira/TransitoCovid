@@ -4,8 +4,10 @@ data/keys/*
 data/QueryData/*
 data/backups/*
 data/dataset/GoogleCloudFiles.csv
+data/dataset/QueriesIndex.csv
 data/dataset/Routes.csv
 data/dataset/Step.csv
 data/dataset/geocoded_waypoints.csv
 data/temp/*
 src/CloudManagement.R
+.Rproj.user

@@ -11,6 +11,8 @@ navbar:
   right:
     - text: "Sobre o Autor"
       href: PersonaInfo.html    
+    - icon: fa-github fa-lg
+      href: https://github.com/Murilojunqueira/TransitoCovid
 
 output:
   html_document:

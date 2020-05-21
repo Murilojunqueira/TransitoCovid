@@ -24,7 +24,7 @@ Abaixo você pode ver como está a quarentena na sua cidade:
 
 ```{r, , echo=FALSE, results='asis'}
 
-ListaImagens <- list.files(path = "images", pattern = "^Transito ")
+ListaImagens <- list.files(path = "doc/figures/website/", pattern = "^Transito ")
 ListaCidades <- sub(".png", "", ListaImagens)
 ListaCidades <- sub("Transito ... - ", "", ListaCidades)
 
