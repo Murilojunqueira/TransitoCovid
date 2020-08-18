@@ -150,10 +150,10 @@ ggplot(data = dplyr::filter(MonitorGeneralDayCity, Cityname %in% citySelection),
   scale_colour_colorblind() + 
   # ggtitle("Indicador de trânsito por cidade") +
   labs(x = "Dia", y = "Fluxo de trânsito") +
-  theme_classic(base_size = 14) +
+  theme_classic(base_size = 12) +
   theme(plot.title = element_text(hjust = 0.5, size = 16), 
         plot.subtitle = element_text(hjust = 0.5),
-        axis.text.x = element_text(angle = 45, hjust = 1),
+        axis.text.x = element_text(angle = 45, hjust = 1, size = 9),
         legend.title = element_blank())
 
 # Print plot
@@ -177,10 +177,10 @@ ggplot(data = dplyr::filter(MonitorGeneralDayCity, Cityname %in% citySelection),
   scale_colour_colorblind() + 
   # ggtitle("Indicador de trânsito por cidade") +
   labs(x = "Dia", y = "Fluxo de trânsito") +
-  theme_classic(base_size = 14) +
+  theme_classic(base_size = 12) +
   theme(plot.title = element_text(hjust = 0.5, size = 16), 
         plot.subtitle = element_text(hjust = 0.5),
-        axis.text.x = element_text(angle = 45, hjust = 1),
+        axis.text.x = element_text(angle = 45, hjust = 1, size = 9),
         legend.title = element_blank())
 
 # Print plot
@@ -204,10 +204,10 @@ ggplot(data = dplyr::filter(MonitorGeneralDayCity, Cityname %in% citySelection),
   scale_colour_colorblind() + 
   # ggtitle("Indicador de trânsito por cidade") +
   labs(x = "Dia", y = "Fluxo de trânsito") +
-  theme_classic(base_size = 14) +
+  theme_classic(base_size = 12) +
   theme(plot.title = element_text(hjust = 0.5, size = 16), 
         plot.subtitle = element_text(hjust = 0.5),
-        axis.text.x = element_text(angle = 45, hjust = 1),
+        axis.text.x = element_text(angle = 45, hjust = 1, size = 9),
         legend.title = element_blank())
 
 # Print plot
@@ -234,10 +234,10 @@ ggplot(data = dplyr::filter(MonitorGeneralDayCity, Cityname %in% citySelection),
   scale_colour_colorblind() + 
   # ggtitle("Indicador de trânsito por cidade") +
   labs(x = "Dia", y = "Fluxo de trânsito") +
-  theme_classic(base_size = 14) +
+  theme_classic(base_size = 12) +
   theme(plot.title = element_text(hjust = 0.5, size = 16), 
         plot.subtitle = element_text(hjust = 0.5),
-        axis.text.x = element_text(angle = 45, hjust = 1),
+        axis.text.x = element_text(angle = 45, hjust = 1, size = 9),
         legend.title = element_blank())
 
 # Print plot
@@ -255,7 +255,7 @@ rm(citySelection)
 # Cidades com menor quarentena
 citySelection <- MonitorGeneralDayCity %>% 
   # Seleciona apenas os dados das últimas duas semanas
-  dplyr::filter(Day_df >= (as_date(now()) - ddays(14))) %>% 
+  dplyr::filter(Day_df >= (max(Day_df) - ddays(14))) %>% 
   group_by(Cityname) %>% 
   summarise(TransitIndicatorDayMean = mean(TransitIndicatorDay, na.rm = TRUE)) %>% 
   arrange(desc(TransitIndicatorDayMean)) %>% 
@@ -275,10 +275,10 @@ ggplot(data = dplyr::filter(MonitorGeneralDayCity, Cityname %in% citySelection),
   scale_colour_colorblind() + 
   # ggtitle("Indicador de trânsito por cidade") +
   labs(x = "Dia", y = "Fluxo de trânsito") +
-  theme_classic(base_size = 14) +
+  theme_classic(base_size = 12) +
   theme(plot.title = element_text(hjust = 0.5, size = 16), 
         plot.subtitle = element_text(hjust = 0.5),
-        axis.text.x = element_text(angle = 45, hjust = 1),
+        axis.text.x = element_text(angle = 45, hjust = 1, size = 9),
         legend.title = element_blank())
 
 
@@ -292,7 +292,7 @@ ggsave(filename = "doc/figures/website/MaiorTransito.png",
 # Cidades com maior quarentena
 citySelection <- MonitorGeneralDayCity %>% 
   # Seleciona apenas os dados das últimas duas semanas
-  dplyr::filter(Day_df >= (as_date(now()) - ddays(14))) %>% 
+  dplyr::filter(Day_df >= (max(Day_df) - ddays(14))) %>% 
   group_by(Cityname) %>% 
   summarise(TransitIndicatorDayMean = mean(TransitIndicatorDay, na.rm = TRUE)) %>% 
   arrange(TransitIndicatorDayMean) %>% 
@@ -311,10 +311,10 @@ ggplot(data = dplyr::filter(MonitorGeneralDayCity, Cityname %in% citySelection),
   scale_colour_colorblind() + 
   # ggtitle("Indicador de trânsito por cidade") +
   labs(x = "Dia", y = "Fluxo de trânsito") +
-  theme_classic(base_size = 14) +
+  theme_classic(base_size = 12) +
   theme(plot.title = element_text(hjust = 0.5, size = 16), 
         plot.subtitle = element_text(hjust = 0.5),
-        axis.text.x = element_text(angle = 45, hjust = 1),
+        axis.text.x = element_text(angle = 45, hjust = 1, size = 9),
         legend.title = element_blank())
 
 ggsave(filename = "doc/figures/website/MenorTransito.png",
